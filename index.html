@@ -3,54 +3,122 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Terick Warner</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body class="start" id="start-body">
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="portfolio.html">Portfolio</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="resume.html">Resume</a></li>
-    </ul>
-  </nav>
-  <div class="wavy">
-    <span style="--i:1;">T</span>
-    <span style="--i:2;">e</span>
-    <span style="--i:3;">r</span>
-    <span style="--i:4;">i</span>
-    <span style="--i:5;">c</span>
-    <span style="--i:6;">k</span>
-    <span style="--i:7;"> </span>
-    <span style="--i:8;">W</span>
-    <span style="--i:9;">a</span>
-    <span style="--i:10;">r</span>
-    <span style="--i:11;">n</span>
-    <span style="--i:12;">e</span>
-    <span style="--i:13;">r</span>
-    <span style="--i:14;">-</span>
-    <span style="--i:15;">A</span>
-    <span style="--i:16;">s</span>
-    <span style="--i:17;">p</span>
-    <span style="--i:18;">i</span>
-    <span style="--i:19;">r</span>
-    <span style="--i:20;">n</span>
-    <span style="--i:21;">g</span>
-    <span style="--i:22;"> </span>
-    <span style="--i:23;">D</span>
-    <span style="--i:24;">e</span>
-    <span style="--i:25;">v</span>
-    <span style="--i:26;">e</span>
-    <span style="--i:27;">l</span>
-    <span style="--i:28;">o</span>
-    <span style="--i:29;">p</span>
-    <span style="--i:30;">e</span>
-    <span style="--i:31;">r</span>
-  </div>
+<body>
+  <section>
+    <nav>
+      <div class="toggle">
+        <i class="fas fa-bars menu"></i>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">About</a></li>
+        <li><a href="index.html">Projects</a></li>
+        <li><a href="index.html">Contact</a></li>
+        <li><a href="index.html">Resume</a></li>
+      </ul>
+    </nav>
+    <!-- A JQUERY SCRIPT THAT TOGGLES THE MENU FOR MOBILE -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('.menu').click(function() {
+          $('ul').toggleClass('active');
+        })
+      })
+    </script>
+  </section>
+  <section>
+    <div class="intro">
+      <h1>Hello!</h1>
+      <h1>I'm Terick Warner</h1>
+      <h2>Aspiring Developer</h2>
+    </div>
+  </section>
+  <section class="break">
+    <div class="break-line">
+
+    </div>
+  </section>
+  <section class="about">
+    <img class="self-photo" src="https://pbs.twimg.com/profile_images/1380636922998050818/hW0_TNDg_400x400.jpg" alt="">
+
+    <div class="about-content">
+      <h1><b>About</b></h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nisi sem, eleifend ac lectus id, hendrerit placerat velit. Nunc nec magna tincidunt lorem varius malesuada at in diam. Etiam at magna tellus. Curabitur consectetur, orci sed
+        sagittis posuere, sem nibh viverra metus, sit amet dignissim ligula erat a arcu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+        inceptos himenaeos. Suspendisse tellus leo, vulputate vel leo ut, commodo faucibus ipsum.
+        <br>
+        Fusce condimentum erat accumsan, condimentum quam ut, tincidunt massa. Nunc placerat elit et risus efficitur, at convallis elit eleifend. Vivamus hendrerit lectus eget magna placerat posuere. Donec purus metus, posuere et dolor sed, laoreet
+        ultrices augue. Suspendisse potenti. Suspendisse justo eros, interdum ut feugiat sed, euismod eu orci. Pellentesque nec condimentum justo, nec molestie arcu. Cras finibus eu mauris vel semper. Pellentesque fringilla enim a sagittis fringilla.
+
+      </p>
+    </div>
+  </section>
+  <section class="break">
+    <div class="break-line">
+
+    </div>
+  </section>
+
+  <section>
+    <div class="portfolio-title">
+      <h1>Portfolio</h1>
+    </div>
+
+    <div class="portfolio-stack">
+      <i class="fab fa-python"></i>
+      <i class="fab fa-html5"></i>
+      <i class="fab fa-css3-alt"></i>
+      <i class="fab fa-bootstrap"></i>
+      <i class="fab fa-js"></i>
+    </div>
+
+    <div class="portfolio-1">
+      <div class="portfolio-right">
+        <h1>Shelby Dry Gin</h1>
+        <h2>HTML, CSS, BOOTSTRAP</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam faucibus augue at dui vestibulum placerat. Nullam rhoncus venenatis nisl. Suspendisse potenti. Maecenas porta tempus arcu et porta. Fusce dolor sapien, rutrum at velit eget,
+          tristique interdum dolor. Pellentesque condimentum vehicula lacus rhoncus consequat. Maecenas ligula arcu, auctor sed volutpat eu, feugiat id arcu. Integer elementum dolor sit amet magna vestibulum blandit. Duis pulvinar purus posuere eros
+          fermentum feugiat. Curabitur sed eros nec lectus commodo auctor non elementum ex.</p>
+      </div>
+      <div class="portfolio-left">
+        <img class="gif" src="shelby-gin.gif" alt="">
+      </div>
+    </div>
+
+    <div class="portfolio-2">
+      <div class="portfolio-beef-content">
+        <h1>Big Beef Tracker</h1>
+        <h2>Python</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam faucibus augue at dui vestibulum placerat. Nullam rhoncus venenatis nisl. Suspendisse potenti. Maecenas porta tempus arcu et porta. Fusce dolor sapien, rutrum at velit eget,
+          tristique interdum dolor. Pellentesque condimentum vehicula lacus rhoncus consequat. Maecenas ligula arcu, auctor sed volutpat eu, feugiat id arcu. Integer elementum dolor sit amet magna vestibulum blandit. Duis pulvinar purus posuere eros
+          fermentum feugiat. Curabitur sed eros nec lectus commodo auctor non elementum ex.</p>
+      </div>
+      <div class="portfolio-beef-pic">
+        <img class="gif" src="big_beef.png" alt="">
+      </div>
+    </div>
+
+    <div class="portfolio-1">
+      <div class="portfolio-right">
+        <h1>Shelby Dry Gin</h1>
+        <h2>HTML, CSS, BOOTSTRAP</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam faucibus augue at dui vestibulum placerat. Nullam rhoncus venenatis nisl. Suspendisse potenti. Maecenas porta tempus arcu et porta. Fusce dolor sapien, rutrum at velit eget,
+          tristique interdum dolor. Pellentesque condimentum vehicula lacus rhoncus consequat. Maecenas ligula arcu, auctor sed volutpat eu, feugiat id arcu. Integer elementum dolor sit amet magna vestibulum blandit. Duis pulvinar purus posuere eros
+          fermentum feugiat. Curabitur sed eros nec lectus commodo auctor non elementum ex.</p>
+      </div>
+      <div class="portfolio-left">
+        <img class="gif" src="shelby-gin.gif" alt="">
+      </div>
+    </div>
+
+  </section>
 
 </body>
 

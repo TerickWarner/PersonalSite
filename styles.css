@@ -1,15 +1,21 @@
-/* html * {
-  background: rgba(255, 0, 0, .1);
-  box-shadow: 0 0 0 1px red;
-} */
-/* NAVIGATION BAR INDEX */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #393e46;
+}
+
+
+/* THIS IS FOR THE NAV BAR */
 nav {
   width: 100%;
-  background: #1d242b;
-  color: #fafafa;
-  position: fixed;
-  top: 0;
-  z-index: 100;
+  background: #222831;
 }
 
 ul {
@@ -19,85 +25,219 @@ ul {
 }
 
 ul li {
-  font-size: 2em;
   list-style: none;
   display: inline-block;
-  padding: 40px;
+  padding: 20px;
 }
 
 ul li:hover {
-  background: #0077c0;
+  background: #0092ca;
 }
 
 ul li a {
-  color: white;
+  color: #eeeeee;
   text-decoration: none;
-  transition: 1.5s;
 }
 
-/* NAV BAR REST OF WEBSITE */
-.norm-nav {
-  position: relative;
-  padding: 0;
-  margin: 0;
+.toggle {
   width: 100%;
+  padding: 10px 20px;
+  background: #222831;
+  text-align: right;
+  box-sizing: border-box;
+  color: #eeeeee;
+  font-size: 30px;
+  display: none;
 }
 
-.norm-body {
-  padding: 0;
-  margin: 0;
+/* THIS IS FOR THE INTRO SECTION */
+.intro {
+  color: #eeeeee;
+  margin: auto;
+  width: 50%;
+  padding-top: 15%;
+  padding-bottom: 15%;
+  font-size: 2em;
 }
 
-/* WAVY TEXT ANIMATION- start.html */
-.start {
-  margin: 0;
-  padding: 0;
-  font-family: consolas;
+/* THIS IS THE BREAK UP DIV */
+.break {
+  height: 100px;
+  background-color: #0092ca;
+  width: 100%;
+  position: relative;
 }
 
-#start-body {
+.break-line {
+  height: 10px;
+  background-color: #222831;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* THIS IS THE ABOUT SECTION THAT DID NOT WORK LETS TRY AGAIN*/
+.about {
+  height: auto;
+  width: 100%;
+  background-color: #eeeeee;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: #1d242b;
+  justify-content: flex-end;
 }
 
-.wavy {
-  position: relative;
-  -webkit-box-reflect: below -12px linear-gradient(transparent, rgba(0, 0, 0, 0.1));
+.self-photo {
+  border-radius: 50%;
 }
 
-.wavy span {
-  position: relative;
-  display: inline-block;
-  color: #fafafa;
-  font-size: 3em;
-  /* text-transform: uppercase; */
-  animation: animate 3s ease-in-out infinite;
-  animation-iteration-count: 1;
-  animation-delay: calc(0.1s * var(--i));
+.about img {
+  float: left;
+  height: 300px;
+  margin: auto;
 }
 
-@keyframes animate {
-  0% {
-    transform: translateY(0px);
+.about h1 {
+  text-align: center;
+}
+
+.about p {
+  text-align: center
+}
+
+.about-content {
+  border-bottom: 400px solid #393e46;
+  border-left: 75px solid rgba(0, 0, 0, 0);
+  height: 0;
+  width: 50%;
+  color: #eeeeee;
+}
+
+/* THIS IS THE PORTFOLIO STUFF */
+.portfolio-title {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 700;
+  color: #eeeeee;
+}
+
+.portfolio-stack {
+  left: 50%;
+  margin: 0 auto;
+
+  width: 50%;
+  height: 150px;
+  background-color: #eeeeee;
+  box-shadow: 0 0 5px 5px #0092ca;
+  margin-bottom: 100px;
+}
+
+.portfolio-stack i {
+  font-size: 135px;
+  padding-left: 7%;
+}
+
+.portfolio-1 {
+  background-color: #eeeeee;
+  height: 400px;
+  width: 75%;
+  margin: 50px auto;
+  padding: 20px;
+  box-shadow: 0 0 10px 10px #0092ca;
+  text-align: center;
+  display: flex;
+}
+
+.gif {
+  height: 400px;
+  width: 550px;
+}
+
+.portfolio-left {
+  border-style: hidden dashed hidden hidden;
+  border-width: 10px;
+  border-color: black;
+  border-spacing: 5px;
+  width: 40%;
+  float:left;
+  background: #eeeeee;
+  height: 400px;
+  margin: auto;
+  order: 1;
+}
+
+.portfolio-right {
+  float: right;
+  width: 60%;
+  height: 400px;
+  background: #eeeeee;
+  order: 2;
+}
+
+.portfolio-right p {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 40px;
+}
+
+.portfolio-2 {
+  background-color: #eeeeee;
+  height: 400px;
+  width: 75%;
+  margin: 50px auto;
+  padding: 20px;
+  box-shadow: 0 0 10px 10px #0092ca;
+  text-align: center;
+  display: flex;
+}
+
+.portfolio-beef-pic {
+  float: right;
+  border-style: hidden hidden hidden dashed;
+  border-width: 10px;
+  border-color: black;
+  border-spacing: 5px;
+  width: 40%;
+  height: 400px;
+  background: #eeeeee;
+  order: 2;
+}
+
+.portfolio-beef-content {
+  width: 60%;
+  float:left;
+  background: #eeeeee;
+  height: 400px;
+  margin: auto;
+  order: 1;
+}
+
+.portfolio-beef-content p {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 40px;
+}
+
+@media(max-width: 768px) {
+
+  /* THIS IS FOR THE MOBILE NAV BAR */
+  .toggle {
+    display: block;
   }
 
-  20% {
-    transform: translateY(-20px);
+  ul {
+    width: 100%;
+    display: none;
   }
 
-  40%, 100% {
-    transform: translateY(0px);
+  ul li {
+    display: block;
+    text-align: center;
   }
-}
 
-/* ABOUT PAGE IMPORTANT STUFF BABABAYYYYYY */
-.about-img {
-  /* border-radius: 80%; */
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 50px;
+  .active {
+    display: block;
+  }
 }
