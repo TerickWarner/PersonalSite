@@ -1,13 +1,12 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
   background-color: #393e46;
 }
 
@@ -16,25 +15,26 @@ body {
 nav {
   width: 100%;
   background: #222831;
+  font-size: 2em;
 }
 
-ul {
+.nav-bar {
   width: 80%;
   margin: 0 auto;
   padding: 0;
 }
 
-ul li {
+.nav-bar ul li {
   list-style: none;
   display: inline-block;
   padding: 20px;
 }
 
-ul li:hover {
+.nav-bar ul li:hover {
   background: #0092ca;
 }
 
-ul li a {
+.nav-bar ul li a {
   color: #eeeeee;
   text-decoration: none;
 }
@@ -52,16 +52,58 @@ ul li a {
 
 /* THIS IS FOR THE INTRO SECTION */
 .intro {
+
+  height: 1500px;
   color: #eeeeee;
-  margin: auto;
-  width: 50%;
-  padding-top: 15%;
-  padding-bottom: 15%;
+  margin: 0 auto;
+  width: 100%;
   font-size: 2em;
+  text-align: center;
+  /* padding-top: 10%; */
+}
+
+.wavy {
+  position: -webkit-sticky;
+  position: sticky;
+  padding-top: 15%;
+  top: 0;
+  -webkit-box-reflect: below -12px linear-gradient(transparent, rgba(0, 0, 0, 0.1));
+}
+
+.wavy span {
+  position: relative;
+  display: inline-block;
+  color: #fafafa;
+  font-size: 3em;
+  /* text-transform: uppercase; */
+  animation: animate 3s ease-in-out infinite;
+  animation-iteration-count: infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0px);
+  }
+
+  20% {
+    transform: translateY(-20px);
+  }
+
+  40%, 100% {
+    transform: translateY(0px);
+  }
+}
+
+.sticky-hr {
+  padding-bottom: 200px;
+  border-style: solid hidden hidden hidden;
+  border-color: #eeeeee;
+  border-width: 5px;
 }
 
 /* THIS IS THE BREAK UP DIV */
-.break {
+/* .break {
   height: 100px;
   background-color: #0092ca;
   width: 100%;
@@ -72,13 +114,20 @@ ul li a {
   height: 10px;
   background-color: #222831;
   width: 100%;
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
+} */
 
 /* THIS IS THE ABOUT SECTION THAT DID NOT WORK LETS TRY AGAIN*/
+.about-title {
+  text-align: center;
+  color: #eeeeee;
+  font-size: 3em;
+  font-weight: 700;
+  padding-bottom: 50px;
+}
 .about {
   height: auto;
   width: 100%;
@@ -93,20 +142,26 @@ ul li a {
 
 .about img {
   float: left;
-  height: 300px;
+  height: 400px;
   margin: auto;
 }
 
 .about h1 {
   text-align: center;
+  font-size: 150px;
 }
 
 .about p {
-  text-align: center
+  text-align: center;
+  font-size: 1.5em;
+  padding: 15% 2% 5% 2%;
 }
 
+.about-border {
+    box-shadow: 0 0 5px 5px #0092ca;
+}
 .about-content {
-  border-bottom: 400px solid #393e46;
+  border-bottom: 700px solid #393e46;
   border-left: 75px solid rgba(0, 0, 0, 0);
   height: 0;
   width: 50%;
@@ -115,10 +170,10 @@ ul li a {
 
 /* THIS IS THE PORTFOLIO STUFF */
 .portfolio-title {
-  margin-top: 30px;
+  margin-top: 100px;
   margin-bottom: 30px;
   text-align: center;
-  font-size: 2em;
+  font-size: 3em;
   font-weight: 700;
   color: #eeeeee;
 }
@@ -219,6 +274,78 @@ ul li a {
   padding-right: 20px;
   padding-top: 40px;
 }
+
+/* THIS IS THE CONTACT ME STUFF */
+
+.contact-me {
+  display: flex;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.links {
+  width: 50%;
+  float: left;
+  margin-bottom: 190px;
+  text-align: center;
+  color: #eeeeee;
+  border-right: dashed;
+  border-width: 10px;
+  border-color: #0092ca;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  order: 1
+}
+
+.links li {
+  padding: 40px;
+  font-size: 2em;
+}
+
+.links i {
+  padding-right: 5%;
+  font-size: 2em;
+  color: #0092ca;
+}
+
+.contact-form {
+  width: 50%;
+  float: right;
+  text-align: center;
+  order: 2;
+  font-size: 2em;
+  color: #eeeeee;
+
+}
+
+.contact-bg {
+  margin: 0 auto;
+  height: 80%;
+  width: 50%;
+  background-color: #0092ca;
+  padding-top: 5%;
+}
+
+/* THIS IS THE FOOTER */
+.footer {
+  margin-top: 20px;
+  text-align: center;
+  background-color: #393e46;
+  padding: 2% 2%;
+}
+
+.footer-links {
+  font-size: 3em;
+  padding-bottom: 20px;
+  color: #0092ca;
+}
+
+.footer-text {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #eeeeee;
+}
+
 
 @media(max-width: 768px) {
 
